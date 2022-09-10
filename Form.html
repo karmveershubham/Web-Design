@@ -1,0 +1,138 @@
+<!-- 4. Write an HTML program to design a form which should allow entering your personal data
+(Hint: make use of text field, password field, e-mail, lists, radio buttons,checkboxes, submit button) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href = "logo.jpg" >
+    <title>Registration Form</title>
+</head>
+<style>
+	body{
+		background-image: url(https://img.freepik.com/free-vector/3d-shapes-sky-tones-background_52683-35351.jpg?w=1060&t=st=1662748918~exp=1662749518~hmac=f2039135c79b5a9b5d1083a3dc765451b160cc06eb2035bba082cf94230bf39f);
+		background-size:cover;
+		width:100%; display:flex; align-items:center; justify-content:space-evenly; font-family:'Roboto',sans-serif; padding-top:100px; padding-bottom:100px;
+	}
+	.container{
+		width:40%; height: 60%;
+	}
+
+	form{
+		background-color:lightblue; width: 85%; padding: 20px 40px 20px 40px;
+		border-radius: 20px; box-shadow:10px 10px 20px rgba(98,98,98,0.24),-10px -10px 20px  rgba(111,110,110,0.322);
+		border-top: 10px solid #0093e9;  filter:opacity(90%);
+	}
+
+	form h1{
+		text-align:center; font-family:'poppins'; margin-bottom:30px;	
+	}
+	.divcontainer{
+		display:flex; align-items:center; margin-bottom: 5px; padding:5px 5px;
+		justify-content:space-evenly;
+	}
+	.divcontainer input{
+		width:100%; height:99%; padding: 5px 4px 5px 10px; border:none; outline: none; font-size: 15px; 
+	}
+	.divcontainer label{
+		width:100%; height:99%; padding: 5px 4px 5px 10px; border:none; outline: none; font-size: 16px;
+	}
+	.gender{
+		display:flex; align-items: center; justify-content:center;
+		margin: 0 25px;
+	}
+	.button input{
+		background-color: #0093e9; font-family:fantasy; color:white; 
+		font-size: 20px; padding:10px 0; border-radius: 5px; width:200%; height:80%;
+	}
+
+	.divcontainer select{
+		width:100%; height:90%;
+		padding: 10px;
+	}
+	#newsletter{
+		width:20%;
+	}
+	#termsandconditions{
+		width:20%;
+	}
+</style>
+
+<body>
+	<div class="container">
+		<form action="DONE.html">
+			<h1>Registration Form</h1>
+
+			<div class="divcontainer">
+				<label>Email</label><br>
+				<input type="email" name="" placeholder="Enter Email"/>
+			</div><br>
+
+			<div class="divcontainer">
+				<label>Password</label><br>
+				<input type ="password" name="" id="" placeholder="Enter Password"/>
+			</div><br>
+
+			<div class="divcontainer ">
+				<label>First Name</label><br>
+				<input type ="text" placeholder="FirstName"/>
+			</div><br>
+
+			<div class="divcontainer">
+				<label>Last Name</label><br>
+				<input type ="text" placeholder="LastName"/>
+			</div><br>
+
+			<div class="divcontainer">
+				<label>Date of Birth</label><br>
+				<input type ="date">
+			</div><br>
+
+			<div class="divcontainer Gender">
+				<label>Gender</label><br>
+				<div class="gender" >
+					<input type="radio" name="gender" id="male"/>
+					<label for="male">Male</label>
+				</div>
+				<div class="gender" >
+					<input type="radio" name="gender" id="female"/>
+					<label for="female">Female</label>
+				</div>
+			</div><br>
+
+			<div class="divcontainer select">
+				<label>Country</label><br>
+				<select>
+					<option>Select a Country</option>
+					<option>India</option>
+					<option>Russia</option>
+					<option>America</option>
+					<option>China</option>
+					<option>Austalia</option>
+				</select>
+			</div>
+
+			<div class="divcontainer checkbox">
+				<input type="checkbox" name="" id="termsandconditions"/>
+				<label for="termsandconditions">I agree with the terms and conditions.</label>
+			</div>
+
+			<div class="divcontainer checkbox">
+				<input type="checkbox" name="" id="newsletter"/>
+				<label for="newsletter">I want to recieve the newsletter.</label>
+			</div>
+
+			<div class="divcontainer button">
+				<div>
+				<input type="submit" value="Register">
+				</div >
+				<div>
+				<input type="reset"  value="Reset">
+				<div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

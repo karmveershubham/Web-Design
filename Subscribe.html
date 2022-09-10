@@ -1,0 +1,123 @@
+<!-- 4. Write an HTML program to design a form which should allow entering your personal data
+(Hint: make use of text field, password field, e-mail, lists, radio buttons,checkboxes, submit button) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href = "logo.jpg" >
+    <title>SUBSCRIBE</title>
+</head>
+<style>
+	body{
+		background-image: url(https://images-cdn.welcomesoftware.com/Zz03ZTY0Mzk3MDhlNDgxMWViYmRmNWY3MjZjM2QxZTdiZg==);
+		background-color:turquoise;
+		width:100%; display:flex; align-items:center; justify-content:space-evenly; font-family:'Roboto',sans-serif; padding-top:50px; padding-bottom:50px;
+		
+	}
+	.container{
+		width:80%;
+	}
+	.divcontainer input{
+		width:100%; height:120%; padding: 5px 4px 5px 5px; border:none; outline: none; font-size: 15px; 
+	}
+	.divcontainer label{
+		width:150%; height:100%; padding: 5px 4px 5px 10px; border:none; outline: none; font-size: 16px;
+	}
+	.hearUs{
+		width:100%; display:inline-flex; align-items: center; justify-content:space-evenly; margin:20px;
+	}
+	form{
+		background-color:burlywood; width: 85%; padding: 20px 40px 20px 40px;
+		border-radius: 20px; box-shadow:10px 10px 20px rgba(98,98,98,0.90),-10px -10px 20px  rgba(111,110,110,0.322);
+		border-top: 10px solid #f15656;  filter:opacity(90%);
+	}
+
+	.divcontainer{
+		display:flex; align-items:center; margin-bottom: 5px; padding:5px 5px;
+		justify-content:space-evenly;
+	}
+</style>
+
+<body>
+	<div class="container" >
+		<form action="DONE.html">
+			<center><h1>Subscribe</h1></center>
+
+			<div class="divcontainer">
+				<h2>Subscribe to XYZ News Magzine and Emails</h2>
+			</div>
+			<div>Intrested in recieving daily small updates of all latst news? well, now you can and best of all, 
+				its free! Just fill out this form  and submit it by clicking  the "Send it In" button. We will put
+				you on our mailing list and you will recieve your first emil in 3-5 days.
+			</div>
+			<hr>
+			<div>Please fill the following boxes to help us  send the emails and our news letter.</div>
+			<br>
+			<div class="divcontainer ">
+				<label>First Name</label><br>
+				<input type ="text" placeholder="FirstName"/>
+			</div><br>
+
+			<div class="divcontainer">
+				<label>Last Name</label><br>
+				<input type ="text" placeholder="LastName"/>
+			</div><br>
+
+			<div class="divcontainer ">
+				<label>Business</label><br>
+				<input type ="text" placeholder="YourBusiness"/>
+			</div><br>
+			<div>
+			<div>We must have a correct e-mail address to send the  news letters.</div>
+			</div><br>
+			<div class="divcontainer">
+				<label>Email</label><br>
+				<input type ="email" placeholder="Email"/>
+			</div><br>
+
+			
+
+			<div class="divcontainer">
+				<label>How did ou hear about XYZ News Magzine and Emails?</label>
+				<div class="hearUs" >
+					<input type="radio" name="hearUs" id="web"/>
+					<label for="web">Hear on the Web</label>
+				</div>
+				<div class="hearUs" >
+					<input type="radio" name="hearUs"id="magzine"/>
+					<label for="magzine">In the Magzine</label>
+				</div>
+				<div class="hearUs" >
+					<input type="radio" name="hearUs" id="TV"/>
+					<label for="TV">Television</label>
+				</div>
+				<div class="hearUs" >
+					<input type="radio" name="hearUs"id="other"/>
+					<label for="other">Others.</label>
+				</div>
+			</div><br>
+
+			<div class="divcontainer checkbox">
+				<label>Would you Like to be in our regular Mailing List?</label>
+				<input type="checkbox" name="" id="newsletter"/>
+				<label for="newsletter">Yes, We love junk Emails.</label>
+			</div>
+			<hr>
+			<div class="divcontainer">
+				<div>
+					<input type ="reset" value="Reset">
+				</div>
+				<div>
+					<input type="submit" value="Send it in!">
+				</div>
+			</div>
+			
+
+
+		</form>
+	</div>
+</body>
+</html>
