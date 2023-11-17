@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 3</title>
+    </head>
+    <body>
+        <h1>Customer information</h1>
+        <form action="submit.html" target="_self">
+            Name: <input type="text" name="fname" required><br><br>
+            Ph no.: <input type="number" name="ph"><br><br>
+            Select prefered days of shopping: <br>
+            <input type="checkbox" name="Monday">Monday
+            <input type="checkbox" name="Tuesday">Tuesday
+            <input type="checkbox" name="Wednesday">Wednesday
+            <input type="checkbox" name="Thrusday">Thrusday
+            <input type="checkbox" name="Friday">Friday
+            <input type="checkbox" name="Saturday">Saturday
+            <input type="checkbox" name="Sunday">Sunday
+           <br><br>
+            Favourite Item: 
+            <select>
+                <option value="" disabled selected>
+                    Choose facourite item
+                </option>
+                <option value="vegetable">vegetable</option>
+                <option value="utensil">utensils</option>
+                <option value="fast food">fast food</option>
+                <option value="clothes">Clothes</option>
+            </select><br><br>
+            Suggestion(if any):<br>
+            <textarea name="comment" cols="30" rows="10">Comment here</textarea><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>

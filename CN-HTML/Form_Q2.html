@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Form</title>
+</head>
+<body>
+    <div class="container" >
+        <header>Submission-Form</header>
+
+        <form action="Thanks.html" name="contactForm" onsubmit="return validateForm()">
+            <div class="formfirst">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name (As On Marksheet)<span class="error" id="nameonmrkErr" style="color: red;"></span></label>
+                            <input type="text" placeholder="Enter your name" name="nameonmrk" id="nameonmrk" autocomplete="off" required><!--required-->
+                            
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Gender <span class="error" id="genderErr" style="color: red;"></span></label>
+                            <select id="gender" name="gender" id="gender" required><!--required-->
+                                <option disabled selected value="0">Select gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option  value="Others">Others</option>
+                            </select>
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" name="dob" id="dob" required><!--required-->
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email<span class="error" id="emailErr" style="color: red;"></span></label>
+                            <input type="text" placeholder="Enter your email" id="email" name="email" required><!--required-->
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number  <span class="error" id="mobileErr" style="color: red;"></span></label>
+                            <input type="number" placeholder="Enter mobile number" id="mobileno" name="mobileno" required ><!--required-->
+                        </div>
+
+                        <div class="input-field">
+                            <label>Guardian Mobile Number <span class="error" id="parentsmobilenoErr" style="color: red;"></span></label>
+                            <input type="number" placeholder="Enter mobile number" id="parentsmobileno" name="parentsmobileno" required ><!--required-->
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address <span class="error" id="addressErr" style="color: red;"></span></label>
+                            <input type="text" placeholder="Enter address" id="address" name="address" required><!--required-->
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label>City <span class="error" id="cityErr" style="color: red;"></span></label>
+                            <input type="text" placeholder="Enter your city" id="city" name="city" required><!--required-->
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <label>Pin Code <span class="error" id="pincodeErr" style="color: red;"></span></label>
+                            <input type="text" placeholder="Enter pin code" id="pincode" name="pincode" required ><!--required-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Education/Job Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Working  <span class="error" id="designationErr" style="color: red;"></span></label>
+                            <select name="designation" id="designation" required><!--required-->
+                                <option disabled selected value="0">Select</option>
+                                <option value="Working">Working</option>
+                                <option value="Student">Student</option>
+                                <option value="Others">Others</option>
+                            </select>
+
+                        </div>
+
+                        <div class="input-field">
+                            <label>College/Company Name  <span class="error" id="comnameErr" style="color: red;"></span></label>
+                            <input type="text" placeholder="Enter College/Company Name" id="comname" name="comname" required ><!--required-->
+                        </div>
+
+                        <div class="input-field">
+                            <label>Enrollment Number  <span class="error" id="enrollErr" style="color: red;"></span></label>
+                            <input type="number" placeholder="Enter Enrollment Number" name="enroll" id="enroll" required><!--required-->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divcontainer button">
+                    <div class="fields">
+                        <div class="input-field">
+                            <input type ="reset" value="RESET">
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" value="SUBMIT">
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </form>
+    </div>
+</body>
+</html>
